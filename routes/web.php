@@ -21,11 +21,17 @@ Auth::routes();
 
 
 
-Route::middleware('auth')->name('admin.')->prefix('admin')->group(function() {
+Route::middleware('auth')
+    ->name('admin.')
+    ->namespace('Admin')
+    ->prefix('admin')
+    ->group(function() {
 
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/home', 'HomeController@index')
+    ->name('home');
 
-    Route::get('/posts', 'PostController@index')->name('posts');
+    Route::get('/posts', 'PostController@index')
+    ->name('posts');
 
 
 });
