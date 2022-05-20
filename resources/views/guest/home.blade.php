@@ -20,6 +20,8 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    
+    <div id='root'>qui viene montato vue</div>
+
+    <script src="{{asset('js/front.js')}}"></script>
 </body>
 </html>
