@@ -1,12 +1,18 @@
 <template>
     <div>
-        App.vue
+        <h1>Post</h1>
+
+        <PostsGrid/>
     </div>
 </template>
 
 <script>
+
+import PostsGrid from './Posts.index.vue'
     export default {
-        
+        components: {
+            PostsGrid,
+        }
     }
 </script>
 
