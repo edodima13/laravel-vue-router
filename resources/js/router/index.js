@@ -14,11 +14,11 @@ const routes = [
         component: Posts
     },
     {
-        path:'/post',
+        path:'/posts/:slug',
         name:'posts.show',
         component: Post
-    }
-
+    },
+    
 ];
 
 const router = new VueRouter({

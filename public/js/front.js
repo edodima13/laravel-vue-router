@@ -1945,7 +1945,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    console.log(this.$route);
+  },
+  beforeMount: function beforeMount() {
+    axios.get("api/posts/".concat(slug));
+  }
+});
 
 /***/ }),
 
@@ -2520,20 +2528,17 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("div", { staticClass: "container" }, [
+      _vm._v(
+        "\n        pagina di dettaglio dei post\n        " +
+          _vm._s(_vm.$route.params.slug) +
+          "\n    "
+      ),
+    ]),
+  ])
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "container" }, [
-        _vm._v("\n        pagina di dettaglio dei post\n    "),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -17973,7 +17978,7 @@ var routes = [{
   name: 'posts.index',
   component: _views_Posts_index_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
 }, {
-  path: '/post',
+  path: '/posts/:slug',
   name: 'posts.show',
   component: _views_Post_show_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
 }];
