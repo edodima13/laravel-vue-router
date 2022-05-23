@@ -1908,7 +1908,6 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Posts_index_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Posts.index.vue */ "./resources/js/views/Posts.index.vue");
 //
 //
 //
@@ -1925,12 +1924,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    PostsGrid: _Posts_index_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-  }
-});
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -2500,8 +2494,6 @@ var render = function () {
       ]),
       _vm._v(" "),
       _c("router-view"),
-      _vm._v(" "),
-      _c("PostsGrid"),
     ],
     1
   )
@@ -17981,7 +17973,7 @@ var routes = [{
   name: 'posts.index',
   component: _views_Posts_index_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
 }, {
-  path: '/posts/:slug',
+  path: '/post',
   name: 'posts.show',
   component: _views_Post_show_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
 }];

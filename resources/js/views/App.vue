@@ -10,17 +10,13 @@
             </li>
         </ul>
     <router-view> </router-view>
-        <PostsGrid/>
+        
     </div>
 </template>
 
 <script>
 
-import PostsGrid from './Posts.index.vue'
     export default {
-        components: {
-            PostsGrid,
-        }
     }
 </script>
 
